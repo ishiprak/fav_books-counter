@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'books.apps.BooksConfig',
+    'users.apps.UsersConfig',
+    'jwt_authenticate.apps.JwtAuthenticateConfig'
 ]
 
 MIDDLEWARE = [
