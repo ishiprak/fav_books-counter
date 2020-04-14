@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*fizo*la8*+7!ic^w!2bg1eml@gon+eg^6i@3o)haclz48oc$u'
+SECRET_KEY = '*fizo*la8*+7!ic^w!2bg1splmeml@gon+eg^6i@3o)haclz48oc$u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,9 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'books.apps.BooksConfig',
-    'users.apps.UsersConfig',
-    'jwt_authenticate.apps.JwtAuthenticateConfig'
+    'books.apps.BooksConfig'
 ]
 
 MIDDLEWARE = [
@@ -122,3 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES' : ('rest_framework.permissions.IsAuthenticated',),
+    'DEFAULT_AUTHENTICATION_CLASSES' : ('rest_framework_simplejwt.authentication.JWTAuthentication',)
+}

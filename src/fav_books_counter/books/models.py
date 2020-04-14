@@ -6,3 +6,6 @@ class Book(models.Model):
     author = models.CharField(max_length=150)
     genre = models.CharField(max_length=50)
     amazon_url = models.URLField()
+
+    def __str__(self):
+        return self.title
