@@ -27,7 +27,7 @@ This program uses different Python packages, libraries and the Django Web-framew
 ## Use cases of the REST API service for `Bookish` -
 
 
->  **For any request to the `Bookish` REST API service for creating / accessing / updating / deleting the books, always use request header with `header['Authorization'] = 'Bearer <your_access_JWT_token>'` for Token verification and Authorization.**
+>  **For any request to the `Bookish` REST API service for creating / accessing / updating / deleting the books, always use request header with `header['Authorization'] = 'Bearer <your_JWT_access_token>'` for Token verification and Authorization.**
 
 
 
