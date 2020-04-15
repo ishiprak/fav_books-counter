@@ -4,7 +4,7 @@ This program uses different Python packages, libraries and the Django Web-framew
 
 ## Setup and Running of the program -
 * On your computer, clone this repository or download the zip files and extract it.
-* To download and install all the dependencies and sub-dependencies to run this program, use "`pip install -r requirtements.txt`" command in your terminal from the root fo the git downloaded or cloned file.
+* To download and install all the dependencies and sub-dependencies to run this program, use "`pip install -r requirtements.txt`" command in your terminal from the root of the downloaded or cloned git file.
 * After the extraction, move to the "src" directory, which is the root directory for the actual executable files.
 * To use the REST API service you can run "`python manage.py runsercver`" command in your terminal to run a localhost server to utilise the REST service on your computer, and send GET/POST/PUT/DELETE requests on the mentioned url in the terminal for the server to use the REST API service for `Bookish`.
 * To create or register your user account to generate JWT token send a POST request to the "https://localhost:<your_port_for_server>/books/api/token/register/" with request body of `username`, `email`, `password`, and `password2` parameters. This step will create or register your account to the REST API service of `Bookish` and then you can move to the next step to generate your pair of JWT tokens to use the service.
