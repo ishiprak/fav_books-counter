@@ -12,7 +12,9 @@ This program uses different Python packages, libraries and the Django Web-framew
 * To generate a new `Access Token`, you can use the `Refresh Token` and send a POST request to the "https://localhost:<your_port_for_server>/books/api/token/" with request body of `Refresh` token with parameter value of the actual Refresh Token provided after generation of your JWT pair of tokens. This will generate a response with with JSON object for new `Access Token` to use while accessing the REST API service of `Bookish`.
 
 ## Use cases of the REST API service for `Bookish` -
-* To create new books send a a POST request to the "https://localhost:<your_port_for_server>/books/api/token/" with request body of `Refresh` token with parameter value of the actual Refresh Token provided after generation of your JWT pair of tokens. This will generate a response with with JSON object for new `Access Token` to use while accessing the REST API service of `Bookish`.
+> * For any request to the `Bookish` REST API service for accesing / updating / deleting of the books, always use request header with `header['Authorization']=<your_access_JWT_token>` for Token verification and Authorization.
+
+* To create new books send a a POST request to the "https://localhost:<your_port_for_server>/books/books/" with request body of `Refresh` token with parameter value of the actual Refresh Token provided after generation of your JWT pair of tokens. This will generate a response with with JSON object for new `Access Token` to use while accessing the REST API service of `Bookish`.
 
 
 
