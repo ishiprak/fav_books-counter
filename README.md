@@ -4,7 +4,7 @@ A Library management system used as **`REST API service`** with **`JWT Authentic
 This program uses different Python packages, libraries and the Django Web-framework as well as JWT (JSON Web Token) Authentication to encapsulate the functionalities of a REST API service as well as a web-based utility.
 
 
-## Setup and Running of the program -
+## Setup and Execution of the program -
 
 
 * On your computer, clone this repository or download the zip files and extract it.
