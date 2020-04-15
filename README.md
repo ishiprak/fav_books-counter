@@ -20,8 +20,11 @@ This program uses different Python packages, libraries and the Django Web-framew
 
 
 
+
 ## Use cases of the REST API service for `Bookish` -
+
 >  **For any request to the `Bookish` REST API service for accessing / updating / deleting the books, always use request header with `header['Authorization'] = <your_access_JWT_token>` for Token verification and Authorization.**
+
 
 * To create new books send a POST request to the `https://localhost:<your_port_for_server>/books/books/` with request body of `title`, `author`, `genre`, and `amazon_url` parameters with values as per your book specifications. This will register your book in the Library management system which you can access later for reading / updating / deleting through the REST API service of `Bookish`.
 
@@ -32,3 +35,4 @@ This program uses different Python packages, libraries and the Django Web-framew
 * To update a particular book in the library system send a PUT request to the `https://localhost:<your_port_for_server>/books/books/<book_id>`, where the <book_id> will be a numerical integer from 1 to n for n books in the library in order of book registration, with request body of `title`, `author`, `genre`, and `amazon_url` parameters with values as per your new book specifications. All the parameters are optional to use as per your update requirements. This will update your current book specifications with the new paameters in the Library management system which you can access later for reading / updating / deleting through the REST API service of `Bookish`.
 
 * To delete a particular book in the library system send a DELETE request to the `https://localhost:<your_port_for_server>/books/books/<book_id>`, where the <book_id> will be a numerical integer from 1 to n for n books in the library in order of book registration. This will delete your current book from the Library management system  and hence this book will not be available for accessing later for reading / updating / deleting through the REST API service of `Bookish`.
+
