@@ -1,4 +1,4 @@
-# Bookish (Favourite-Books-Manager)
+# Bookish (Books-Library-Management-System-cum-REST-API-Service)
 <p>A Library management REST API service with JWT authentication, User Registration and Authorization functionalities built using Django web framework.</p>
 This program uses different Python packages, libraries and the Django Web-framework as well as JWT (JSON Web Token) Authentication to encapsulate the functionalities of a REST API service as well as a web-based utility.
 
