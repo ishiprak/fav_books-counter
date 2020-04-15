@@ -4,6 +4,7 @@ This program uses different Python packages, libraries and the Django Web-framew
 
 ## Setup and Running of the program -
 
+
 * On your computer, clone this repository or download the zip files and extract it.
 
 * To download and install all the dependencies and sub-dependencies to run this program, use "`pip install -r requirtements.txt`" command in your terminal from the root of the downloaded or cloned git file.
@@ -23,7 +24,9 @@ This program uses different Python packages, libraries and the Django Web-framew
 
 ## Use cases of the REST API service for `Bookish` -
 
+
 >  **For any request to the `Bookish` REST API service for accessing / updating / deleting the books, always use request header with `header['Authorization'] = <your_access_JWT_token>` for Token verification and Authorization.**
+
 
 
 * To create new books send a POST request to the `https://localhost:<your_port_for_server>/books/books/` with request body of `title`, `author`, `genre`, and `amazon_url` parameters with values as per your book specifications. This will register your book in the Library management system which you can access later for reading / updating / deleting through the REST API service of `Bookish`.
