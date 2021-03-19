@@ -6,7 +6,7 @@ defusedxml==0.6.0
 diff-match-patch==20181111
 Django==2.2.10
 django-import-export==2.0.2
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 djangorestframework-simplejwt==4.4.0
 et-xmlfile==1.0.1
 idna==2.9
